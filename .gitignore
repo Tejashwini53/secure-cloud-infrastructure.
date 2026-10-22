@@ -3,8 +3,8 @@
 *.tfstate.*
 *.tfplan
 *.plan
-terraform/.terraform/
 .terraform/
+terraform/.terraform/
 
 # Credentials and secrets
 .env
