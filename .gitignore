@@ -1,0 +1,25 @@
+# Terraform state and generated plans
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.plan
+terraform/.terraform/
+.terraform/
+
+# Credentials and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials
+.aws/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Logs
+*.log
