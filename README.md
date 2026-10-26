@@ -130,9 +130,22 @@ kubectl get hpa
 
 ## Monitoring
 
-Prometheus is used to collect and query metrics, while Grafana provides dashboards for monitoring application and Kubernetes health.
+Prometheus and Grafana are used to monitor the Kubernetes cluster and application workloads.
 
-The monitoring work includes CPU utilization, Pod readiness, and alert configuration.
+### Implemented Monitoring Features
+
+- Installed Prometheus and Grafana using Helm.
+- Queried Kubernetes metrics through Prometheus.
+- Created a Grafana dashboard named **Secure Cloud Infrastructure Monitoring**.
+- Configured a Flask CPU Usage panel.
+- Configured a Memory Utilization panel.
+- Added a Pod Readiness panel to monitor ready pods.
+- Added a Pod Health panel to monitor pods in the Running phase.
+- Accessed Prometheus and Grafana using Kubernetes port forwarding.
+
+### Alerting
+
+Grafana alert rules have been configured, and validation of the alert-triggering behavior remains in progress.
 
 ## Learning Outcomes
 
@@ -146,11 +159,11 @@ The monitoring work includes CPU utilization, Pod readiness, and alert configura
 
 ## Future Improvements
 
-- Complete and validate the Grafana alert rules.
-- Add memory utilization and additional resource panels.
-- Document the full Terraform deployment and teardown workflow.
-- Add screenshots of dashboards, autoscaling tests, and Pod recovery.
+- Validate Grafana alert rules by testing their state transitions.
+- Document the Terraform deployment and teardown workflow.
+- Add screenshots of the monitoring dashboard, autoscaling tests, and Pod recovery.
 - Improve deployment security and add automated testing.
+- Store monitoring configuration and dashboard exports in Git for reproducibility.
 
 ## Author
 
